@@ -5,6 +5,7 @@ import Header from './Components/Common/Header';
 import Task from './Other/Task';
 import DiwaliTask from './Other/DiwaliTask';
 import Home from './Components/Common/Home';
+import Footer from './Components/Common/Footer';
 function App() {
   return (
     <div className="App">
@@ -32,6 +33,7 @@ function App() {
 
       
       </Routes>
+      <Footer/>
     </div>
   );
 }
