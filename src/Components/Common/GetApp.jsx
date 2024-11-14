@@ -3,13 +3,18 @@ import iphone from '../assets/images/Iphone.png'
 import { TextField } from '@mui/material'
 import playstore from '../assets/images/Google-Play.png';
 import appstore from '../assets/images/App-Store.png'
+import { motion } from 'framer-motion';
 const GetApp = () => {
   return (
-    <div className='bg-[#fffbf7] mt-7 p-[100px]'>
+    <div className='bg-[#fffbf7] mt-7 p-[100px] '>
       <div className='max-w-7xl p-2 '>
         <div className='flex justify-center'>
           <div className='image-container max-w-[400px] '>
-            <img src={iphone} className=' object-cover w-full' />
+            <motion.img initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ amount: 0.2 }} // Trigger animation every time it enters the viewport
+      style={{ width: '100%', height: 'auto' }} src={iphone} className=' object-cover w-full' />
           </div>
           <div>
             <h1 className='text-[#1c1c1c] text-[44px] font-medium'>Get the Zomato app
@@ -47,8 +52,14 @@ const GetApp = () => {
 <p className='text-[16px] text-[#9c9c9c] font-normal'>
 Download app from
 <div className='flex  gap-3 mt-4 max-w-[150px]'>
-<img src={playstore} className=''/>
-<img src={appstore} className=''/>
+<motion.img src={playstore} initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ amount: 0.2 }} />
+<motion.img src={appstore} className=''initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, ease: "easeOut" }}
+      viewport={{ amount: 0.2 }} />
 
 
 </div>

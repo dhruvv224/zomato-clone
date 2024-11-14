@@ -3,6 +3,7 @@ import Category from './Category'
 import Collection from './Collection'
 import GetApp from './GetApp'
 import Exploreoptio from './Exploreoptio'
+import PopupImage from '../../Other/PopupImage'
 const Home = () => {
   return (
     <div>
@@ -11,6 +12,7 @@ const Home = () => {
         <Exploreoptio/>
 
         <GetApp/>
+        <PopupImage/>
     </div>
   )
 }
