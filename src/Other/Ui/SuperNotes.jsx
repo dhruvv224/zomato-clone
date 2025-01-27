@@ -47,7 +47,13 @@ const SuperNotes = () => {
                 </p>
            </div>
            
+           
         </div>
+        <div className='relative w-full'>
+            <input type="text" className='w-full' />
+            <button className='bg-red-500 '></button>
+
+           </div>
     </div>
   )
 }
